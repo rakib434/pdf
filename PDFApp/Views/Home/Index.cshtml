@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div class="jumbotron">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="text" name="QRCode" placeholder="QR Code" value="" />
+            <input type="file" name="ImageFile" required />
+            <input type="submit" name="name" value="Submit" />
+        }
+  
+    </div>
